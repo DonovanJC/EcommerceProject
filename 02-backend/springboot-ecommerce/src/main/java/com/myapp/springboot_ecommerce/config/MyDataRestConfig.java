@@ -29,6 +29,5 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
                 .withItemExposure(((metdata, httpMethods) -> httpMethods.disable(unsupportedActions)))
                 .withCollectionExposure((metdata, httpMethods) -> httpMethods.disable(unsupportedActions));
 
-
     }
 }
