@@ -3,6 +3,10 @@
  * Common CSS
  * ----------------------------
  */
+ html, body {
+    height: 100%; /* Full height for the page */
+    margin: 0; /* Remove default margin */
+  }
 
  *{
     margin:0;
@@ -112,7 +116,7 @@ a{
 
 a:active,a:focus,a:hover{
     text-decoration:none;
-    outline:0
+    outline:0;
 }
 
 a,a:hover{
@@ -129,17 +133,21 @@ a,a:hover{
 
 .page-wrapper{
     overflow:hidden;
-    background:#f0d9f7;
-    padding-bottom:3%
+    background:#ffffff;
+    padding-bottom:3%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .page-container{
-    background:#e5e5e5;
-    padding-left:200px
+    background:#ffffff;
+    padding-left:100px;
+    min-height: 100vh;
 }
 
 .main-content{
-    background-color: #f0d9f7;
+    background-color: #fcfbff;
     padding-top:116px;
     min-height:100vh
 }
@@ -158,14 +166,14 @@ aside.menu-sidebar.d-none.d-lg-block.clr{
  */
 
 .header-desktop{
-    background:#4d0783;
+    background:#f5e8ff;
     -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     position:fixed;
     top:0;
     right:0;
-    left:200px;
+    left:100px;
     height:75px;
     z-index:3
 }
@@ -345,7 +353,7 @@ input.au-input.au-input-xl{
  */
 
 .menu-sidebar{
-    width:200px;
+    width:100px;
     position:fixed;
     left:0;
     top:0;
@@ -360,7 +368,7 @@ input.au-input.au-input-xl{
 .menu-sidebar .logo{
     background:#f5e8ff;
     height:75px;
-    padding:0 35px;
+    padding:0px;
     display:-webkit-box;
     display:-webkit-flex;
     display:-moz-box;
@@ -374,14 +382,12 @@ input.au-input.au-input-xl{
     -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
     box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
-    border-right:1px solid #7338A0;
     position:relative;
     z-index:3
 }
 
 .menu-sidebar .navbar-list .navbar-sub-list{
     display:none;
-    padding-left:34px
 }
 
 .menu-sidebar .navbar-list .navbar-sub-list li a{
@@ -396,16 +402,17 @@ input.au-input.au-input-xl{
 }
 
 .navbar-sidebar{
-    padding:35px;
+    padding:10px;
     padding-bottom:0
 }
+
 
 .navbar-sidebar .navbar-list li a{
     text-decoration: none;
     display:block;
     color:#0F0529;
     font-size:16px;
-    padding:5px 0
+    padding:15px 0
 }
 
 .navbar-sidebar .navbar-list li a i{
@@ -753,14 +760,17 @@ table.table.table-bordered th{
  */
 
  .price{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight:700;
     color:#7338A0;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 .detail-section{
     margin-top:60px
+}
+
+.detail-img{
+    width: 80%;
 }
 /**/
 
@@ -800,15 +810,15 @@ a.primary-btn:hover{
  * ----------------------------
  */
 
-footer ul li a{
-    color:#fff
-}
-footer{
+ footer{
     background:#232324;
     z-index:1;
     position:relative;
     text-align:center;
     overflow: hidden;
+}
+footer ul li a{
+    color:#fff
 }
 footer li a{
     color:#313131;
